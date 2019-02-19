@@ -1,0 +1,24 @@
+<ion-view view-title="Profile">
+
+    <ion-content>
+
+        <div class="text-center">
+            <h1 class="title-profile">Chose one pict</h1>
+            
+            <i class="icon ion-person icon-profile" ng-if="cordovaImgPath == ''"></i>
+            <img ng-if="cordovaImgPath != null && cordovaImgPath != ''" ng-src="{{pathForImage()}}" class="photo-profile">
+            <br><br>
+            <!-- <img ng-if="cordovaImgPath == ''"ng-src="../img/no-user.jpg" class="img-md-user"/> -->
+            <!-- <img ng-if="cordovaImgPath != null" ng-src="{{pathForImage()}}" class="img-md-user"> -->
+        </div>
+
+    </ion-content>
+
+    <ion-footer-bar class="bar bar-positive ">
+        <div class="button-bar ">
+            <button class="button icon-left ion-upload btn-take-photo" ng-click="callLoadImage()">Take Photo</button>
+        </div>
+    </ion-footer-bar>
+
+
+</ion-view>

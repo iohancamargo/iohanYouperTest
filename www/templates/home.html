@@ -1,0 +1,28 @@
+<ion-view view-title="Home">
+
+    <ion-content>
+        <div class="row">
+            
+            <div class="col-avatar">
+                <a class="" href="" ng-click="callLoadImage()">
+                    <i ng-if="cordovaImgPath == ''" class="icon ion-person icon-user"></i>
+                    <img ng-if="cordovaImgPath != ''" ng-src="{{pathForImage()}}" class="icon-profile-home">
+                </a>
+            </div>
+
+            <div class="col-alarm">
+                <div ng-if="messagesNotRead.length == 0">
+                    <i class="icon ion-alert icon-exclamation"></i>
+                </div>
+
+                <div ng-if="messagesNotRead.length > 0" ng-click="showInteractiveMsg()">
+                    <i class="icon ion-alert icon-exclamation"></i>
+                    <div class="pulse-alert"></div>
+                </div>
+            </div>
+            
+        </div>
+
+    </ion-content>
+
+</ion-view>

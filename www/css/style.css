@@ -1,0 +1,321 @@
+
+/* Animates*/
+@-webkit-keyframes slide-left {
+    from {
+        margin-left: 0%;width: 80%;
+   }
+   to{
+       margin-left: +80%;
+       width: 100%;
+   }
+}
+@-moz-keyframes slide-left {
+   from {
+       margin-left: 0%;
+       width: 80%;
+   }
+   to {
+       margin-left: +80%;
+       width: 80%;
+   }
+}
+
+@-o-keyframes slide-left {
+   from {
+       margin-left: 0%;
+       width: 80%;
+   }
+   to {
+       margin-left: +80%;
+       width: 80%;
+   }
+}
+@keyframes slide-left {
+   from {
+       margin-left: 0%;
+       width: 80%;
+   }
+   to {
+       margin-left: +80%;
+       width: 80%;
+   }
+}
+
+@-webkit-keyframes pulse {
+    0% {
+      -webkit-box-shadow: 0 0 0 0 rgba(30, 144, 255, 0.6);
+    }
+    70% {
+        -webkit-box-shadow: 0 0 0 10px rgba(30, 144, 255, 0);
+    }
+    100% {
+        -webkit-box-shadow: 0 0 0 0 rgba(30, 144, 255, 0);
+    }
+}
+
+@keyframes pulse {
+    0% {
+      -moz-box-shadow: 0 0 0 0 rgba(255, 233, 30, 0.74);
+      box-shadow: 0 0 0 0 rgba(255, 240, 30, 0.89);
+    }
+    70% {
+        -moz-box-shadow: 0 0 0 10px rgba(255, 233, 30, 0.87);
+        box-shadow: 0 0 0 10px rgba(233, 255, 30, 0);
+    }
+    100% {
+        -moz-box-shadow: 0 0 0 0 rgba(252, 248, 8, 0.904);
+        box-shadow: 0 0 0 0 rgba(214, 255, 30, 0);
+    }
+}
+
+/* Empty. Add your own CSS if you like */
+.ic-img-no-border{
+    border: none;
+    cursor: pointer;
+    padding-left: 5px!important;
+    padding-right: 5px!important;
+}
+
+.alg-left{
+
+    float: left;
+}
+
+.alg-right{
+    float: right;
+}
+
+.img-relative{
+    left: 0px !important;
+    position: relative !important;
+    max-width: 50px!important;
+}
+
+.ic-like-img{
+    position: relative;
+    top: 20px;
+    font-size:35px;
+    /* float:right; */
+}
+
+.img-md-user{
+    width: 50%;
+}
+
+.pop-up-img-interactive{
+    max-width: 50px;
+    text-align: center;
+}
+
+
+.slide-left {
+    /* -moz-animation: 5s slide-left infinite;
+    -webkit-animation: 5s slide-left infinite;
+    -o-animation: 5s slide-left infinite; */
+    animation: 2s slide-left infinite;
+    margin-right:5px;
+  }
+
+.pulse-alert {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    box-shadow: rgba(237, 241, 2, 0.6);
+    animation: pulse 2s infinite;
+    position: absolute;
+    right: 0;
+    top: 14px;
+    margin: 0px 16px 0px 0px;
+}
+
+.pulse {
+    margin-left:40%;
+    text-align: center;
+    /* float: right; */
+    vertical-align: middle;
+    margin-bottom: 50px;
+    /* display: block; */
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: rgba(238, 214, 0, 0.932);
+    animation: pulse 2s infinite;
+}
+
+.pulse:hover {
+    animation: none;
+}
+
+.alert-msg {
+    background: red;
+}
+
+.popup-container.active .popup {
+    border-radius: 14px;
+}
+
+.popup-container.active .popup:focus {
+    border-radius: 14px;
+}
+
+.confirmation-pop .button {
+    background-color: #ffbb00ce !important;
+    color: #fff;
+    border-radius: 20px;
+}
+
+.confirmation-pop .button:focus, .confirmation-pop .button:hover {
+    background-color: #ffbb00ce !important;
+    color: #fff;
+    border-radius: 20px;
+}
+
+.scroll-content{
+    background-color: #00000080 !important;
+}
+
+.bar.bar-stable {
+    background-color: #7f7f7f;
+    color: #fff !important;
+}
+
+.bar.bar-stable .title {
+    color: #fff;
+}
+
+.bar-stable .button.button-clear {
+    border-color: transparent;
+    background: none;
+    box-shadow: none;
+    color: #fff;
+    font-size: 17px;
+}
+
+.item-complex .item-content, .item-radio .item-content {
+    position: relative;
+    z-index: 2;
+    padding: 16px 49px 16px 16px;
+    border: none;
+    background-color: #dfdfdf;
+}
+
+.item-avatar > img:first-child,
+.item-avatar .item-image,
+.item-avatar .item-content > img:first-child,
+.item-avatar .item-content .item-image,
+.item-avatar-left > img:first-child,
+.item-avatar-left .item-image,
+.item-avatar-left .item-content > img:first-child,
+.item-avatar-left .item-content .item-image
+{
+    position: absolute;
+    top: 0px;
+    left: 16px;
+    max-width: 40px;
+    max-height: 40px;
+    width: auto;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.col-avatar {
+    width: 50%;
+    height: 50px;
+    padding: 0 5px;
+    background-color: #7f7f7f;
+}
+
+.col-avatar > a > img {
+    width: 100%;
+    border-radius: 25px;
+    border: 2px solid #fff;
+}
+
+.col-alarm {
+    width: 50%;
+    height: 50px;
+    background-color: #7f7f7f;
+}
+
+.icon-exclamation {
+    float: right;
+    color: #fff;
+    display: block;
+    text-align: center;
+    padding: 14px 20px 14px 20px;
+    font-size: 26px;
+    margin: 0px 5px 0px -5px;
+}
+
+.icon-user {
+    padding: 7px 10px 5px 10px;
+    font-size: 34px;
+    display: inline-block;
+    border: 2px solid #fff;
+    border-radius: 25px;
+    color: #fff;
+}
+
+.icon-profile-home {
+    color: #fff;
+    max-width: 50px;
+    max-height: 50px;
+    display: inline-block;
+}
+
+.title-profile {
+    color: rgba(238, 214, 0, 0.932);
+    padding-top: 25px;
+}
+
+.icon-profile {
+    background: rgb(196, 196, 196);
+    width: 280px;
+    height: 280px;
+    font-size: 240px;
+    padding-top: 0px;
+    display: inline-block;
+    border: 2px solid #fff;
+    border-radius: 100%;
+    color: #fff;
+    margin-top: 40px;
+}
+
+.photo-profile {
+    background: rgb(196, 196, 196);
+    width: 280px;
+    height: 280px;
+    font-size: 240px;
+    padding-top: 0px;
+    display: inline-block;
+    border: 2px solid #fff;
+    border-radius: 100%;
+    color: #fff;
+    margin-top: 40px;
+}
+
+ion-content {
+    background-color: #7f7f7f !important;
+}
+
+.clique-aqui {
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+}
+
+ion-footer-bar {
+    background-color:rgba(185, 185, 179, 0.904) !important;
+    height: 80px !important;
+
+}
+
+.btn-take-photo {
+    font-size: 22px !important;
+    background-color: rgba(218, 196, 2, 0.74) !important;
+}
+
+.margin-ios{
+  margin-top: 20px !important;
+}
